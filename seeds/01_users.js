@@ -5,14 +5,12 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       const seedUsers = [{
         id: 1,
-        first_name: 'cole',
-        last_name: 'batson',
-        email: 'cbatson@gmail.com'
+        email: 'cbatson@gmail.com',
+        password: 'bacon'
       },{
         id: 2,
-        first_name: 'jackie',
-        last_name: 'batson',
-        email: 'jackiebatson@gmail.com'
+        email: 'jackiebatson@gmail.com',
+        password: 'flowers'
       }]
       return knex('users').insert(seedUsers)
     });
